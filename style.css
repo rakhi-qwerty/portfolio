@@ -18,7 +18,7 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #f8f3e9;
+    background: #fcfcfc;
     color: #17165c;
 }
 
@@ -32,7 +32,7 @@ body {
     width: 100%;
     min-height: 1000px;
     overflow: hidden;
-    background: #f8f3e9;
+    background: #ece4d2;
 }
 
 
@@ -100,48 +100,67 @@ body {
         0 2px 5px rgba(48, 38, 82, 0.05);
 
     z-index: 1;
+transition: transform 0.35s ease, box-shadow 0.35s ease;
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+    animation-fill-mode: forwards;
 }
 
+
+
+.box-top-left:hover {
+    transform: scale(1.04) rotate(-10deg);
+    box-shadow: 0 18px 38px rgba(100, 39, 199, 0.18);
+}
+
+.box-top-right:hover {
+    transform: scale(1.04) rotate(11deg);
+    box-shadow: 0 18px 38px rgba(100, 39, 199, 0.18);
+}
+
+.box-bottom-left:hover {
+    transform: scale(1.04) rotate(-10deg);
+    box-shadow: 0 18px 38px rgba(100, 39, 199, 0.18);
+}
+
+.box-bottom-right:hover {
+    transform: scale(1.04) rotate(-1deg);
+    box-shadow: 0 18px 38px rgba(100, 39, 199, 0.18);
+}
 
 /* Top Left */
 
 .box-top-left {
     top: 205px;
     left: 225px;
-
     transform: rotate(-10deg);
+
+    animation-name: popTopLeft;
 }
-
-
-/* Top Right */
 
 .box-top-right {
     top: 200px;
-        right: 225px;
-
+    right: 225px;
     transform: rotate(11deg);
+
+    animation-name: popTopRight;
 }
-
-
-/* Bottom Left */
 
 .box-bottom-left {
     bottom: 200px;
     left: 225px;
-
     transform: rotate(-10deg);
+
+    animation-name: popBottomLeft;
 }
-
-
-/* Bottom Right */
 
 .box-bottom-right {
     bottom: 200px;
     right: 225px;
-
     transform: rotate(-1deg);
-}
 
+    animation-name: popBottomRight;
+}
 
 /* =========================
    HERO CONTENT
@@ -351,28 +370,103 @@ body {
         font-size: 15px;
     }
 
-    .image-box {
-        width: 135px;
-        height: 105px;
+ .box-top-left {
+    top: 205px;
+    left: 225px;
+    --rotation: -10deg;
+}
+
+.box-top-right {
+    top: 200px;
+    right: 225px;
+    --rotation: 11deg;
+}
+
+.box-bottom-left {
+    bottom: 200px;
+    left: 225px;
+    --rotation: -10deg;
+}
+
+.box-bottom-right {
+    bottom: 200px;
+    right: 225px;
+    --rotation: -1deg;
+}
+}
+
+
+@keyframes popTopLeft {
+
+    0% {
+        opacity: 0;
+        transform: translate(425px, 295px) scale(0.15) rotate(0deg);
     }
 
-    .box-top-left {
-        left: 10px;
-        top: 115px;
+    70% {
+        opacity: 1;
+        transform: translate(40px, 25px) scale(1.05) rotate(-10deg);
     }
 
-    .box-top-right {
-        right: 10px;
-        top: 120px;
+    100% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1) rotate(-10deg);
+    }
+}
+
+
+@keyframes popTopRight {
+
+    0% {
+        opacity: 0;
+        transform: translate(-425px, 300px) scale(0.15) rotate(0deg);
     }
 
-    .box-bottom-left {
-        left: 8px;
-        bottom: 120px;
+    70% {
+        opacity: 1;
+        transform: translate(-40px, 25px) scale(1.05) rotate(11deg);
     }
 
-    .box-bottom-right {
-        right: 8px;
-        bottom: 120px;
+    100% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1) rotate(11deg);
+    }
+}
+
+
+@keyframes popBottomLeft {
+
+    0% {
+        opacity: 0;
+        transform: translate(425px, -300px) scale(0.15) rotate(0deg);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translate(40px, -25px) scale(1.05) rotate(-10deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1) rotate(-10deg);
+    }
+}
+
+
+@keyframes popBottomRight {
+
+    0% {
+        opacity: 0;
+        transform: translate(-425px, -300px) scale(0.15) rotate(0deg);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translate(-40px, -25px) scale(1.05) rotate(-1deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1) rotate(-1deg);
     }
 }
