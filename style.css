@@ -923,3 +923,479 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
         font-size: 13px;
     }
 }
+
+
+
+/* =========================
+   TOOLS & LANGUAGES
+========================= */
+
+.skills-section {
+    width: 100%;
+    min-height: 1000px;
+
+    padding: 100px 0;
+
+    background: #f8f3e9;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.skills-heading {
+    text-align: center;
+
+    padding: 0 30px;
+
+    margin-bottom: 65px;
+}
+
+.skills-heading h2 {
+    font-family: 'DM Serif Display', serif;
+
+    font-size: 68px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    background: linear-gradient(
+        90deg,
+        #17165c 0%,
+        #17165c 42%,
+        #6427c7 70%,
+        #7b35d1 100%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills-heading h3 {
+    margin-top: 8px;
+
+    font-family: 'DM Serif Display', serif;
+
+    font-size: 48px;
+    font-weight: 400;
+
+    color: #17165c;
+}
+
+.skills-heading p {
+    margin-top: 20px;
+
+    font-size: 15px;
+
+    color: #77748c;
+}
+
+
+/* =========================
+   ROW
+========================= */
+
+.skills-row {
+    width: 100%;
+
+    margin-bottom: 70px;
+}
+
+
+/* =========================
+   ROW HEADING
+========================= */
+
+.row-heading {
+    display: flex;
+    align-items: center;
+
+    width: calc(100% - 170px);
+
+    margin: 0 auto 25px;
+
+    gap: 20px;
+}
+
+.row-heading > span {
+    flex-shrink: 0;
+
+    font-size: 19px;
+    font-weight: 600;
+
+    letter-spacing: 6px;
+
+    color: #17165c;
+}
+
+.heading-line {
+    flex: 1;
+
+    height: 1px;
+
+    background: rgba(23, 22, 92, 0.22);
+}
+
+.row-heading small {
+    flex-shrink: 0;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    color: #aaa6b8;
+}
+
+
+/* =========================
+   SLIDER WINDOW
+========================= */
+
+.slider-window {
+    width: 100%;
+
+    overflow: hidden;
+
+    padding: 5px 0 15px;
+}
+
+
+/* =========================
+   CONTINUOUS TRACK
+========================= */
+
+.slider {
+    display: flex;
+
+    width: max-content;
+
+    gap: 0;
+
+    will-change: transform;
+}
+
+.slider-set {
+    display: flex;
+
+    flex-shrink: 0;
+
+    gap: 18px;
+
+    padding-right: 18px;
+}
+
+
+/* =========================
+   TOOL — MOVE LEFT
+========================= */
+
+.tools-slider {
+    animation: toolsLoop 20s linear infinite;
+}
+
+@keyframes toolsLoop {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-1386px);
+    }
+}
+
+
+/* =========================
+   LANGUAGES — MOVE RIGHT
+========================= */
+
+/* =========================
+   LANGUAGES — RIGHT LOOP
+========================= */
+
+.languages-slider {
+    display: flex;
+    width: max-content;
+
+    transform: translateX(-990px);
+
+    animation: languagesLoop 20s linear infinite;
+}
+
+
+/* Each language set */
+
+.languages-slider .slider-set {
+    display: flex;
+    flex-shrink: 0;
+
+    gap: 18px;
+
+    padding-right: 18px;
+}
+
+
+/* =========================
+   MOVE RIGHT
+========================= */
+
+@keyframes languagesLoop {
+
+    from {
+        transform: translateX(-990px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* =========================
+   PAUSE ON HOVER
+========================= */
+
+.slider-window:hover .slider {
+    animation-play-state: paused;
+}
+
+
+/* =========================
+   SKILL BOX
+========================= */
+
+.skill-box {
+    flex-shrink: 0;
+
+    width: 180px;
+    height: 195px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 22px;
+
+    background: #fffdf8;
+
+    border: 1px solid rgba(23, 22, 92, 0.07);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 20px rgba(40, 30, 80, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =========================
+   BOX HOVER
+========================= */
+
+.skill-box:hover {
+    transform: scale(1.04);
+
+    box-shadow:
+        0 12px 28px rgba(40, 30, 100, 0.09);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.skill-icon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    color: white;
+}
+
+
+/* =========================
+   TOOL COLORS
+========================= */
+
+.vscode {
+    background: #1677d2;
+}
+
+.git {
+    background: #e94b35;
+}
+
+.github {
+    background: #24292f;
+}
+
+.figma {
+    background: linear-gradient(
+        135deg,
+        #f24e1e,
+        #a259ff,
+        #1abcfe,
+        #0acf83
+    );
+}
+
+.canva {
+    background: linear-gradient(
+        135deg,
+        #00c4cc,
+        #7d2ae8
+    );
+}
+
+.photoshop {
+    background: #0a2c50;
+}
+
+.chrome {
+    background: #e94235;
+}
+
+
+/* =========================
+   LANGUAGE COLORS
+========================= */
+
+.c {
+    background: #3159b7;
+}
+
+.cpp {
+    background: #2863c7;
+}
+
+.html {
+    background: #e34c26;
+}
+
+.css {
+    background: #2965f1;
+}
+
+.javascript {
+    background: #f7df1e;
+
+    color: #111;
+}
+
+
+/* =========================
+   BOX TEXT
+========================= */
+
+.skill-box > span {
+    font-size: 15px;
+
+    font-weight: 500;
+
+    color: #48465a;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .skills-section {
+        min-height: 1000px;
+
+        padding: 80px 0;
+    }
+
+    .skills-heading h2 {
+        font-size: 52px;
+    }
+
+    .skills-heading h3 {
+        font-size: 38px;
+    }
+
+    .skills-heading p {
+        font-size: 13px;
+    }
+
+    .row-heading {
+        width: calc(100% - 40px);
+    }
+
+    .row-heading small {
+        display: none;
+    }
+
+    .skill-box {
+        width: 160px;
+        height: 180px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .skills-heading {
+        padding: 0 20px;
+    }
+
+    .skills-heading h2 {
+        font-size: 40px;
+    }
+
+    .skills-heading h3 {
+        font-size: 31px;
+    }
+
+    .skills-heading p {
+        font-size: 12px;
+
+        line-height: 1.5;
+    }
+
+    .row-heading {
+        width: calc(100% - 30px);
+    }
+
+    .row-heading > span {
+        font-size: 14px;
+
+        letter-spacing: 4px;
+    }
+
+    .skill-box {
+        width: 145px;
+        height: 165px;
+    }
+
+    .skill-icon {
+        width: 58px;
+        height: 58px;
+
+        font-size: 23px;
+    }
+
+    .skill-box > span {
+        font-size: 13px;
+    }
+}
