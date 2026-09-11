@@ -1399,3 +1399,21 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
         font-size: 13px;
     }
 }
+
+
+.skill-icon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-icon img {
+    width: 58px;
+    height: 58px;
+
+    object-fit: contain;
+    display: block;
+}
