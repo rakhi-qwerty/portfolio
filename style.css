@@ -1397,33 +1397,412 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
    REMOVE OLD LOGO BACKGROUNDS
 ========================================= */
 
-.skill-icon,
-.skill-icon.vscode,
-.skill-icon.git,
-.skill-icon.github,
-.skill-icon.figma,
-.skill-icon.canva,
-.skill-icon.photoshop,
-.skill-icon.chrome,
-.skill-icon.c,
-.skill-icon.cpp,
-.skill-icon.html,
-.skill-icon.css,
-.skill-icon.javascript {
-    background: transparent !important;
-    background-image: none !important;
+/* =========================================================
+   WHEN I'M NOT CODING
+========================================================= */
 
-    border: none !important;
-    box-shadow: none !important;
+.not-coding {
+    position: relative;
 
-    width: 70px !important;
-    height: 70px !important;
+    width: 100%;
+    min-height: 1000px;
+
+    padding: 105px 50px 90px;
+
+    background: #f8f3e9;
+
+    overflow: hidden;
 }
 
-.skill-icon img {
-    width: 58px !important;
-    height: 58px !important;
 
-    display: block !important;
-    object-fit: contain !important;
+/* =========================================================
+   HEADING
+========================================================= */
+
+.not-coding-heading {
+    position: relative;
+
+    z-index: 5;
+
+    text-align: center;
+}
+
+.balance-label {
+    margin-bottom: 24px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 9px;
+
+    color: #17165c;
+}
+
+.not-coding-heading h2 {
+    font-family: 'DM Serif Display', serif;
+
+    font-size: 68px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: -1.5px;
+
+    color: #17165c;
+}
+
+.not-coding-heading h2 span {
+    color: #6427c7;
+
+    font-style: italic;
+}
+
+.balance-subtitle {
+    margin-top: 20px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 17px;
+    font-weight: 400;
+
+    color: #77748c;
+}
+
+
+/* =========================================================
+   HOBBY GALLERY
+========================================================= */
+
+.hobby-gallery {
+    position: relative;
+
+    width: 100%;
+    max-width: 1200px;
+
+    height: 510px;
+
+    margin: 70px auto 0;
+}
+
+
+/* =========================================================
+   HOBBY CARD
+========================================================= */
+
+.hobby-card {
+    position: absolute;
+
+    width: 185px;
+    height: 245px;
+
+    padding: 7px;
+
+    background: #fffdf8;
+
+    border-radius: 13px;
+
+    box-shadow:
+        0 12px 25px rgba(35, 29, 70, 0.08);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+
+    z-index: 2;
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 9px;
+}
+
+
+/* =========================================================
+   HOBBY ARC POSITIONS
+========================================================= */
+/* =========================================================
+   HOBBY ARC POSITIONS
+========================================================= */
+
+.hobby-1 {
+    left: -30px;
+    top: 165px;
+
+    transform: rotate(-31deg);
+}
+
+.hobby-2 {
+    left: 185px;
+    top: 70px;
+
+    transform: rotate(-18deg);
+}
+
+.hobby-3 {
+    left: 335px;
+    top: 20px;
+
+    transform: rotate(-8deg);
+}
+
+.hobby-4 {
+    left: 50%;
+    top: 10px;
+
+    transform: translateX(-50%) rotate(0deg);
+
+    z-index: 3;
+}
+
+.hobby-5 {
+    right: 335px;
+    top: 20px;
+
+    transform: rotate(8deg);
+}
+
+.hobby-6 {
+    right: 145px;
+    top: 70px;
+
+    transform: rotate(18deg);
+}
+
+.hobby-7 {
+    right: -30px;
+    top: 165px;
+
+    transform: rotate(31deg);
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.hobby-1:hover {
+    transform: rotate(-31deg) scale(1.07);
+    z-index: 10;
+}
+
+.hobby-2:hover {
+    transform: rotate(-18deg) scale(1.07);
+    z-index: 10;
+}
+
+.hobby-3:hover {
+    transform: rotate(-8deg) scale(1.07);
+    z-index: 10;
+}
+
+.hobby-4:hover {
+    transform: rotate(1deg) scale(1.07);
+    z-index: 10;
+}
+
+.hobby-5:hover {
+    transform: rotate(9deg) scale(1.07);
+    z-index: 10;
+}
+
+.hobby-6:hover {
+    transform: rotate(18deg) scale(1.07);
+    z-index: 10;
+}
+
+.hobby-7:hover {
+    transform: rotate(31deg) scale(1.0);
+    z-index: 10;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .not-coding {
+        min-height: 1000px;
+
+        padding: 85px 25px;
+    }
+
+    .not-coding-heading h2 {
+        font-size: 52px;
+    }
+
+    .balance-label {
+        font-size: 10px;
+        letter-spacing: 7px;
+    }
+
+    .balance-subtitle {
+        font-size: 14px;
+    }
+
+    .hobby-gallery {
+        height: 600px;
+
+        max-width: 650px;
+    }
+
+    .hobby-card {
+        width: 145px;
+        height: 195px;
+    }
+
+    .hobby-1 {
+        left: 0;
+        top: 190px;
+    }
+
+    .hobby-2 {
+        left: 80px;
+        top: 75px;
+    }
+
+    .hobby-3 {
+        left: 180px;
+        top: 20px;
+    }
+
+    .hobby-4 {
+        left: 250px;
+        top: 0;
+    }
+
+    .hobby-5 {
+        right: 180px;
+        top: 20px;
+    }
+
+    .hobby-6 {
+        right: 80px;
+        top: 75px;
+    }
+
+    .hobby-7 {
+        right: 0;
+        top: 190px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .not-coding {
+        padding: 70px 18px;
+
+        min-height: 1000px;
+    }
+
+    .not-coding-heading h2 {
+        font-size: 39px;
+    }
+
+    .balance-label {
+        font-size: 8px;
+
+        letter-spacing: 5px;
+    }
+
+    .balance-subtitle {
+        margin-top: 16px;
+
+        font-size: 13px;
+    }
+
+    .hobby-gallery {
+        height: 700px;
+
+        margin-top: 55px;
+
+        max-width: 390px;
+    }
+
+    .hobby-card {
+        width: 120px;
+        height: 165px;
+    }
+
+    .hobby-1 {
+        left: 5px;
+        top: 260px;
+    }
+
+    .hobby-2 {
+        left: 48px;
+        top: 145px;
+    }
+
+    .hobby-3 {
+        left: 130px;
+        top: 65px;
+    }
+
+    .hobby-4 {
+        left: 50%;
+
+        transform: translateX(-50%) rotate(1deg);
+
+        top: 25px;
+    }
+
+    .hobby-5 {
+        right: 130px;
+        top: 65px;
+    }
+
+    .hobby-6 {
+        right: 48px;
+        top: 145px;
+    }
+
+    .hobby-7 {
+        right: 5px;
+        top: 260px;
+    }
+
+    .hobby-1:hover {
+        transform: rotate(-31deg) scale(1.06);
+    }
+
+    .hobby-2:hover {
+        transform: rotate(-18deg) scale(1.06);
+    }
+
+    .hobby-3:hover {
+        transform: rotate(-8deg) scale(1.06);
+    }
+
+    .hobby-4:hover {
+        transform: translateX(-50%) rotate(1deg) scale(1.06);
+    }
+
+    .hobby-5:hover {
+        transform: rotate(9deg) scale(1.06);
+    }
+
+    .hobby-6:hover {
+        transform: rotate(18deg) scale(1.06);
+    }
+
+    .hobby-7:hover {
+        transform: rotate(31deg) scale(1.06);
+    }
 }
