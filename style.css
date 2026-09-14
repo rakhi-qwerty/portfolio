@@ -1274,31 +1274,6 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
 }
 
 
-/* =========================
-   LANGUAGE COLORS
-========================= */
-
-.c {
-    background: #3159b7;
-}
-
-.cpp {
-    background: #2863c7;
-}
-
-.html {
-    background: #e34c26;
-}
-
-.css {
-    background: #2965f1;
-}
-
-.javascript {
-    background: #f7df1e;
-
-    color: #111;
-}
 
 
 /* =========================
@@ -1416,4 +1391,39 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
 
     object-fit: contain;
     display: block;
+}
+
+/* =========================================
+   REMOVE OLD LOGO BACKGROUNDS
+========================================= */
+
+.skill-icon,
+.skill-icon.vscode,
+.skill-icon.git,
+.skill-icon.github,
+.skill-icon.figma,
+.skill-icon.canva,
+.skill-icon.photoshop,
+.skill-icon.chrome,
+.skill-icon.c,
+.skill-icon.cpp,
+.skill-icon.html,
+.skill-icon.css,
+.skill-icon.javascript {
+    background: transparent !important;
+    background-image: none !important;
+
+    border: none !important;
+    box-shadow: none !important;
+
+    width: 70px !important;
+    height: 70px !important;
+}
+
+.skill-icon img {
+    width: 58px !important;
+    height: 58px !important;
+
+    display: block !important;
+    object-fit: contain !important;
 }
