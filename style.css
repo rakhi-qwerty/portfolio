@@ -1537,6 +1537,7 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
 .hobby-1 {
     left: -30px;
     top: 165px;
+    
 
     transform: rotate(-31deg);
 }
