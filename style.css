@@ -1470,7 +1470,6 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
     color: #77748c;
 }
 
-
 /* =========================================================
    HOBBY GALLERY
 ========================================================= */
@@ -1479,22 +1478,22 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
     position: relative;
 
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
 
-    height: 510px;
+    height: 520px;
 
-    margin: 70px auto 0;
+    margin: 75px auto 0;
 }
 
 
 /* =========================================================
-   HOBBY CARD
+   HOBBY CARDS
 ========================================================= */
 
 .hobby-card {
     position: absolute;
 
-    width: 185px;
+    width: 180px;
     height: 245px;
 
     padding: 7px;
@@ -1528,60 +1527,56 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
 
 
 /* =========================================================
-   HOBBY ARC POSITIONS
-========================================================= */
-/* =========================================================
-   HOBBY ARC POSITIONS
+   WIDE ARC — LIKE YOUR REFERENCE
 ========================================================= */
 
 .hobby-1 {
-    left: -30px;
-    top: 165px;
-    
+    left: 0;
+    top: 170px;
 
     transform: rotate(-31deg);
 }
 
 .hobby-2 {
-    left: 185px;
+    left: 175px;
     top: 70px;
 
-    transform: rotate(-18deg);
+    transform: rotate(-17deg);
 }
 
 .hobby-3 {
-    left: 335px;
+    left: 365px;
     top: 20px;
 
-    transform: rotate(-8deg);
+    transform: rotate(-7deg);
 }
 
 .hobby-4 {
     left: 50%;
-    top: 10px;
+    top: 8px;
 
     transform: translateX(-50%) rotate(0deg);
 
-    z-index: 3;
+    z-index: 4;
 }
 
 .hobby-5 {
-    right: 335px;
+    right: 365px;
     top: 20px;
 
-    transform: rotate(8deg);
+    transform: rotate(7deg);
 }
 
 .hobby-6 {
-    right: 145px;
+    right: 175px;
     top: 70px;
 
-    transform: rotate(18deg);
+    transform: rotate(17deg);
 }
 
 .hobby-7 {
-    right: -30px;
-    top: 165px;
+    right: 0;
+    top: 170px;
 
     transform: rotate(31deg);
 }
@@ -1592,6 +1587,45 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
 ========================================================= */
 
 .hobby-1:hover {
+    transform: rotate(-31deg) scale(1.06);
+    z-index: 10;
+}
+
+.hobby-2:hover {
+    transform: rotate(-17deg) scale(1.06);
+    z-index: 10;
+}
+
+.hobby-3:hover {
+    transform: rotate(-7deg) scale(1.06);
+    z-index: 10;
+}
+
+.hobby-4:hover {
+    transform: translateX(-50%) rotate(0deg) scale(1.06);
+    z-index: 10;
+}
+
+.hobby-5:hover {
+    transform: rotate(7deg) scale(1.06);
+    z-index: 10;
+}
+
+.hobby-6:hover {
+    transform: rotate(17deg) scale(1.06);
+    z-index: 10;
+}
+
+.hobby-7:hover {
+    transform: rotate(31deg) scale(1.06);
+    z-index: 10;
+}
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+/* .hobby-1:hover {
     transform: rotate(-31deg) scale(1.07);
     z-index: 10;
 }
@@ -1624,7 +1658,7 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
 .hobby-7:hover {
     transform: rotate(31deg) scale(1.0);
     z-index: 10;
-}
+} */
 
 
 /* =========================================================
