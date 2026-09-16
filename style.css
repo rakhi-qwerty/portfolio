@@ -1478,11 +1478,11 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
     position: relative;
 
     width: 100%;
-    max-width: 1300px;
+    max-width: 1500px;
 
-    height: 520px;
+    height: 560px;
 
-    margin: 75px auto 0;
+    margin: 70px auto 0;
 }
 
 
@@ -1493,19 +1493,19 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
 .hobby-card {
     position: absolute;
 
-    width: 180px;
-    height: 245px;
+    width: 205px;
+    height: 255px;
 
-    padding: 7px;
+    padding: 0;
 
     background: #fffdf8;
 
-    border-radius: 13px;
-
-    box-shadow:
-        0 12px 25px rgba(35, 29, 70, 0.08);
+    border-radius: 12px;
 
     overflow: hidden;
+
+    box-shadow:
+        0 12px 28px rgba(35, 29, 70, 0.08);
 
     transition:
         transform 0.35s ease,
@@ -1522,30 +1522,30 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
 
     object-fit: cover;
 
-    border-radius: 9px;
+    border-radius: 12px;
 }
 
 
 /* =========================================================
-   WIDE ARC — LIKE YOUR REFERENCE
+   WIDE CURVED ARC
 ========================================================= */
 
 .hobby-1 {
-    left: 0;
-    top: 170px;
+    left: 5px;
+    top: 185px;
 
     transform: rotate(-31deg);
 }
 
 .hobby-2 {
-    left: 175px;
-    top: 70px;
+    left: 195px;
+    top: 75px;
 
     transform: rotate(-17deg);
 }
 
 .hobby-3 {
-    left: 365px;
+    left: 405px;
     top: 20px;
 
     transform: rotate(-7deg);
@@ -1553,7 +1553,7 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
 
 .hobby-4 {
     left: 50%;
-    top: 8px;
+    top: 10px;
 
     transform: translateX(-50%) rotate(0deg);
 
@@ -1561,29 +1561,29 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
 }
 
 .hobby-5 {
-    right: 365px;
+    right: 405px;
     top: 20px;
 
     transform: rotate(7deg);
 }
 
 .hobby-6 {
-    right: 175px;
-    top: 70px;
+    right: 195px;
+    top: 75px;
 
     transform: rotate(17deg);
 }
 
 .hobby-7 {
-    right: 0;
-    top: 170px;
+    right: 5px;
+    top: 185px;
 
     transform: rotate(31deg);
 }
 
 
 /* =========================================================
-   HOVER
+   HOVER ZOOM
 ========================================================= */
 
 .hobby-1:hover {
