@@ -1538,7 +1538,7 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
 }
 
 .hobby-2 {
-    left: 195px;
+    left: 165px;
     top: 75px;
 
     transform: rotate(-17deg);
@@ -1568,7 +1568,7 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
 }
 
 .hobby-6 {
-    right: 195px;
+    right: 165px;
     top: 75px;
 
     transform: rotate(17deg);
