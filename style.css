@@ -974,6 +974,7 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
     -webkit-text-fill-color: transparent;
 }
 
+
 .skills-heading h3 {
     margin-top: 8px;
 
@@ -992,11 +993,6 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
 
     color: #77748c;
 }
-
-
-/* =========================
-   ROW
-========================= */
 
 .skills-row {
     width: 100%;
@@ -1621,44 +1617,6 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
     z-index: 10;
 }
 
-/* =========================================================
-   HOVER
-========================================================= */
-
-/* .hobby-1:hover {
-    transform: rotate(-31deg) scale(1.07);
-    z-index: 10;
-}
-
-.hobby-2:hover {
-    transform: rotate(-18deg) scale(1.07);
-    z-index: 10;
-}
-
-.hobby-3:hover {
-    transform: rotate(-8deg) scale(1.07);
-    z-index: 10;
-}
-
-.hobby-4:hover {
-    transform: rotate(1deg) scale(1.07);
-    z-index: 10;
-}
-
-.hobby-5:hover {
-    transform: rotate(9deg) scale(1.07);
-    z-index: 10;
-}
-
-.hobby-6:hover {
-    transform: rotate(18deg) scale(1.07);
-    z-index: 10;
-}
-
-.hobby-7:hover {
-    transform: rotate(31deg) scale(1.0);
-    z-index: 10;
-} */
 
 
 /* =========================================================
