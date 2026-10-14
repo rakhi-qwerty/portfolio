@@ -1799,3 +1799,446 @@ transition: transform 0.35s ease, box-shadow 0.35s ease;    animation-duration: 
         transform: rotate(31deg) scale(1.06);
     }
 }
+
+
+
+
+/* =========================================================
+   CONTACT SECTION
+========================================================= */
+
+.contact-section {
+    position: relative;
+
+    width: 100%;
+    min-height: 1000px;
+
+    padding: 145px 25px 100px;
+
+    overflow: hidden;
+
+    background: #fffdf8;
+
+    color: #17165c;
+}
+
+
+/* =========================================================
+   CONTENT CONTAINER
+========================================================= */
+
+.contact-content {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.contact-title {
+    margin: 0;
+
+    font-family: 'DM Serif Display', serif;
+
+    font-size: clamp(64px, 8.8vw, 110px);
+    font-weight: 400;
+
+    line-height: 0.99;
+    letter-spacing: -3px;
+
+    color: #172968;
+}
+
+.contact-title-first,
+.contact-title-second {
+    display: block;
+    white-space: nowrap;
+}
+
+.contact-title-first {
+    margin-left: 15px;
+
+    font-style: normal;
+}
+
+.contact-title-second {
+    margin-left: 255px;
+
+    color: #5724db;
+
+    font-style: italic;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.contact-description {
+    max-width: 500px;
+
+    margin: 30px 0 0 180px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 17px;
+    font-weight: 400;
+
+    line-height: 1.65;
+    letter-spacing: 0.3px;
+
+    color: #817b96;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.contact-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin: 34px 0 0 160px;
+}
+
+.contact-btn {
+    width: 257px;
+    height: 64px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    border-radius: 40px;
+
+    text-decoration: none;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.contact-btn svg {
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+}
+
+
+/* Connect */
+
+.connect-btn {
+    background: #192b70;
+
+    border: 1px solid #192b70;
+
+    color: #ffffff;
+}
+
+.connect-btn:hover {
+    background: #273b8b;
+
+    border-color: #273b8b;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 22px rgba(25, 43, 112, 0.16);
+}
+
+
+/* Resume */
+
+.resume-btn {
+    background: transparent;
+
+    border: 1.5px solid #7654e8;
+
+    color: #252b83;
+}
+
+.resume-btn:hover {
+    background: #f0eaff;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(87, 36, 219, 0.08);
+}
+
+
+/* =========================================================
+   SOCIAL DIVIDER
+========================================================= */
+
+.social-divider {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    width: 485px;
+
+    margin: 40px 0 0 183px;
+}
+
+.social-divider > span {
+    height: 1px;
+
+    flex: 1;
+
+    background: #c5b9e8;
+}
+
+.social-divider p {
+    flex-shrink: 0;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    color: #8179a4;
+}
+
+
+/* =========================================================
+   SOCIAL LINKS
+========================================================= */
+
+.contact-socials {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 32px;
+
+    margin: 30px 0 0 180px;
+}
+
+.social-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #172968;
+
+    text-decoration: none;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.social-link svg {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+}
+
+.social-link:hover {
+    color: #6427c7;
+
+    transform: translateY(-2px);
+}
+
+.social-divider-vertical {
+    width: 1px;
+    height: 34px;
+
+    background: #c5b9e8;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .contact-section {
+        min-height: 1000px;
+
+        padding: 130px 30px 80px;
+    }
+
+    .contact-content {
+        max-width: 700px;
+    }
+
+    .contact-title {
+        font-size: clamp(55px, 8vw, 76px);
+
+        letter-spacing: -2px;
+    }
+
+    .contact-title-first {
+        margin-left: 0;
+    }
+
+    .contact-title-second {
+        margin-left: 110px;
+    }
+
+    .contact-description {
+        margin-left: 100px;
+
+        font-size: 15px;
+    }
+
+    .contact-actions {
+        margin-left: 80px;
+    }
+
+    .contact-btn {
+        width: 225px;
+        height: 60px;
+
+        font-size: 15px;
+    }
+
+    .social-divider {
+        width: min(485px, 100%);
+
+        margin-left: 100px;
+    }
+
+    .contact-socials {
+        margin-left: 100px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .contact-section {
+        min-height: 1000px;
+
+        padding: 100px 22px 70px;
+    }
+
+    .contact-title {
+        font-size: clamp(37px, 9vw, 52px);
+
+        line-height: 1.08;
+        letter-spacing: -1.5px;
+    }
+
+    .contact-title-first {
+        margin-left: 0;
+    }
+
+    .contact-title-second {
+        margin-left: 35px;
+    }
+
+    .contact-description {
+        margin: 25px 0 0;
+
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .contact-actions {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 14px;
+
+        margin: 28px 0 0;
+    }
+
+    .contact-btn {
+        width: 100%;
+        max-width: 320px;
+
+        height: 56px;
+
+        font-size: 15px;
+    }
+
+    .social-divider {
+        width: 100%;
+
+        gap: 12px;
+
+        margin: 35px 0 0;
+    }
+
+    .social-divider p {
+        font-size: 8px;
+
+        letter-spacing: 2.5px;
+    }
+
+    .contact-socials {
+        gap: 18px;
+
+        margin: 27px 0 0;
+    }
+
+    .social-link {
+        gap: 8px;
+
+        font-size: 13px;
+    }
+
+    .social-link svg {
+        width: 29px;
+        height: 29px;
+    }
+
+    .social-divider-vertical {
+        height: 28px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
